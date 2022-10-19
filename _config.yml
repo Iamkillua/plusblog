@@ -4,7 +4,7 @@ blog_theme: light # Or use dark
 name: Akatsuki Blog
 paginate: 25
 url: https://iamkillua.github.io/plusblog/
-
+baseurl: /plusblog
 
 # Optional settings
 
