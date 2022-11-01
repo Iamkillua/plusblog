@@ -1,20 +1,18 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Akatsuki Blog</title>
+    <description></description>
+    <link></link>
+    <atom:link href="/plusblog/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Getting started</title>
+        <description>Getting started with protonplus</description>
+        <pubDate>Tue, 01 Nov 2022 00:00:00 +0530</pubDate>
+        <link>/plusblog/posts/getting-started</link>
+        <guid isPermaLink="true">/plusblog/posts/getting-started</guid>
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
