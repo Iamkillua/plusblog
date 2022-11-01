@@ -63,13 +63,13 @@ On windows, install Ruby and Node with the installers found here:
   - [Node.js](https://nodejs.org/en/download/)
 
 Next setup your environment:
-
+    npm install  
     npm run setup
 
 ### Development
 
 Run Jekyll:
-
+    yarn install --modules-folder ./_assets/yarn
     npm run local
 
 ## Deploy to GitHub Pages
