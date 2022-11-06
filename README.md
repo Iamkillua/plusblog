@@ -69,7 +69,9 @@ Next setup your environment:
 ### Development
 
 Run Jekyll:
+
     yarn install --modules-folder ./_assets/yarn
+    
     npm run local
 
 ## Deploy to GitHub Pages
